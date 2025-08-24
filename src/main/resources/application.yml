@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: Estudo Autenticação
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/auth_database
+    username: root
+    password: asp36412
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: true
+  jackson:
+    serialization:
+      INDENT_OUTPUT: true
+
+jwt:
+  secret: VkZGMFZGVm9NVUpGVkZVOVBRUUtPV0pOVFZoR1UxWkJRVVpTZGtSclUwOU1XazFaSDadASDASDASDASDASDFASDQAy
+  expiration: 3600000
+
+server:
+  port: 8080
